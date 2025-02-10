@@ -77,5 +77,126 @@
     width: 100%;
   }
 
+  /* Hide Tiny Navbar on Mobile */
+@media (max-width: 1024px) {
+    .tiny-navbar {
+      display: none;
+    }
+  }
+
+  /* Main Navbar */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+  }
   
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+  }
   
+  /* Icons Container */
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--grey);
+    border-radius: 20px;
+    padding: 8px 12px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  /* Hide Search Bar Input on Mobile */
+  @media (max-width: 1024px) {
+    .search-bar input {
+      display: none;
+    }
+  }
+  
+ /* Mobile Menu Button */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 🔥 Full-Screen Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95); /* Light overlay */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Enable scrolling */
+    padding:100px;
+  }
+  
+  /* 🔥 Close Button */
+  .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Tiny Navbar in Mobile Menu */
+  .mobile-tiny-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Mobile Menu Links */
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Mobile Tiny Navbar Logos */
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .mobile-logo img {
+    width: 40px;
+  }
