@@ -16,20 +16,54 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+        {!isMobile && (
+        <div className="tiny-navbar">
+          <div className="logos">
+            <img src="/images/jordan-logo.png" alt="Jordan Logo" />
+            <img src="/images/converse-logo.png" alt="Converse Logo" />
+          </div>
+          <div className="links">
+            <span>Find a Store</span> | <span>Help</span> | <span>Join Now</span> | <span>Sign In</span>
+          </div>
+        </div>
+      )}
       {/* Main Navbar */}
       <div className="main-navbar">
         <div className="logo">
           <img src="/images/nike-logo.png" alt="Nike Logo" />
         </div>
+        {/* Desktop Nav Links - Hidden on Mobile */}
+        {!isMobile && (
+          <div className="nav-links">
+            <span>New & Featured</span>
+            <span>Mens</span>
+            <span>Womens</span>
+            <span>Kids</span>
+          </div>
+        )}
+
         <div className="icons">
+          {/* Search Bar - Hidden on Mobile */}
+          {!isMobile && (
+            <div className="search-bar">
+              <Search size={24} color="#000000" />
+              <input type="text" placeholder="Search" />
+            </div>
+          )}
+          {/* Search Icon (Only for Mobile) */}
+          {isMobile && <Search size={24} color="#000000" />}
+          <Heart size={24} color="#000000" />
+          <ShoppingBag size={24} color="#000000" />
+  
           {isMobile && (
             <button className="menu-toggle" onClick={() => setMenuOpen(true)}>
               <AlignJustify size={28} color="#000000" />
             </button>
           )}
         </div>
-      </div>
 
+      </div>
+        
       {/* Mobile Menu (with Framer Motion for animation) */}
       {isMobile && menuOpen && (
         <motion.div
