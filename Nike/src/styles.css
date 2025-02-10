@@ -1,0 +1,81 @@
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    position: sticky;
+  }
+  
+  .tiny-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: var(--grey);
+    font-size: 0.9rem;
+  }
+  .tiny-navbar .logos{
+    padding-right: 8px;
+  }
+  .tiny-navbar .logos img {
+    height: 20px;
+  }
+  
+  .tiny-navbar .links span {
+    margin-left: 10px;
+  }
+  
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    height: 30vh;
+    background-color: var(--white);
+  }
+  
+  .main-navbar .logo img {
+    height: 50px;
+  }
+  
+  .main-navbar .nav-links span {
+    margin: 0 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .main-navbar .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-navbar .icons input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .main-navbar .icons svg {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Space between the icon and input */
+    background-color: var(--grey);
+    border-radius: 20px; /* Makes it rounded */
+    padding: 6px;
+  }
+  
+  .search-bar input {
+    border: none; /* No border */
+    outline: none; /* Removes focus outline */
+    background: transparent; /* Matches the background */
+    font-size: 16px;
+    width: 100%;
+  }
+
+  
+  

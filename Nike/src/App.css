@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --white: #ffffff;
+  --black: #0e0e0e;
+  --grey: #acacac;
+  --orange: #ff6600;
+}
+
