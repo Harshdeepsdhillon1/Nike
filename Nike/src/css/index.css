@@ -6,6 +6,7 @@
   --white: #ffffff;
   --black: #0e0e0e;
   --grey: #f7f7f7;
+  --darkgrey: #272727;
   --orange: #ff6600;
   scroll-behavior: smooth;
 }
@@ -20,9 +21,11 @@ h1,h2,h3,p,a,li,span,input{
   font-style: normal;
 }
 h1, h2 {
-  font-size: 2rem;
-  font-weight: 900;
+  font-family: "Roboto Condensed", serif;
+  font-size: 4rem;
+  font-weight: 1000;
   text-transform: uppercase;
+  color: var(--black);
 }
 
 h3 {

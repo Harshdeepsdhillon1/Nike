@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Search, Heart, ShoppingBag, AlignJustify, X } from "lucide-react";
 import { motion } from "framer-motion"; // Import Framer Motion
+import "../css/navbar.css";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
