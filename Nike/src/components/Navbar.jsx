@@ -82,19 +82,18 @@ const Navbar = () => {
       {!isMobile && isExpanded && (
         <motion.div 
           className="expanded-navbar"
-          initial={{ opacity: 0, y: -10 }} 
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.2 }}
+          initial={{ opacity: 0, y: -50 }}  // Start state (hidden and up)
+      animate={{ opacity: 1, y: 0 }}    // Animated state (fully visible)
+      exit={{ opacity: 0, y: -50 }}     // Exit state (hidden and up)
           onMouseEnter={handleMouseEnter}  // Keep it open if hovering
           onMouseLeave={handleMouseLeave} // Close when leaving both
+          transition={{duration: 0.3}}
         >
           <div className="expanded-content">
                 <div className="column">
                 <h3>Featured</h3>
                 <span>Shop All New Arrivals</span>
                 <span>Best Sellers</span>
-                <span>SNKRS Launch Calendar</span>
             </div>
             <div className="column">
                 <h3>Shop Icons</h3>
@@ -104,7 +103,6 @@ const Navbar = () => {
                 <span>Dunk</span>
                 <span>Blazer</span>
                 <span>Pegasus</span>
-                <span>Mercurial</span>
             </div>
             <div className="column">
                 <h3>Jordan</h3>
@@ -112,8 +110,6 @@ const Navbar = () => {
                 <span>Latest Drops</span>
                 <span>Streetwear</span>
                 <span>Jordan Basketball</span>
-                <span>Jordan Golf</span>
-                <span>Jordan x PSG</span>
             </div>
             <div className="column">
                 <h3>Discover Sport</h3>

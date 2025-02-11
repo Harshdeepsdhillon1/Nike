@@ -32,7 +32,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    height: 2   0vh;
+    height: 15vh;
     background-color: var(--white);
   }
   
@@ -72,6 +72,7 @@
   }
   
   .main-navbar .icons input {
+    width: 150px;
     padding: 5px;
     margin-right: 10px;
   }
@@ -137,7 +138,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 80vw;
+    width: 70vw;
     height: 100vh;
     background: rgba(255, 255, 255, 0.95); /* Light overlay */
     z-index: 1000;
@@ -235,5 +236,60 @@
     cursor: pointer;
     font-size: 14px;
     color: #333;
+    transition: font-weight 0.3s ease;
+  }
+  .column span:hover{
+    color: var(--black);
+    font-weight: bold ;
   }
   
+/* HERO SECTION STYLING */
+/* Make sure the header component takes up the full height of the viewport */
+.header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: #f7f7f7; /* Optional: Can be changed */
+}
+
+/* Container for the image */
+.header-img-container {
+  width: 100%;
+  height: 80%; /* 80% height for the image */
+  overflow: hidden;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+/* Style for the h1 title */
+.header-title {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #333;
+}
+
+/* Style for the Explore More button */
+.explore-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: var(--black);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+}
+
+.explore-button:hover {
+  background-color: var(--grey); /* Darker shade on hover */
+}
