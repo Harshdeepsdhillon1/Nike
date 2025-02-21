@@ -6,6 +6,7 @@
     flex-direction: column;
     padding:0;
     position: fixed;
+    z-index: 1001;
   }
   /* Tiny Navbar at top */
   .tiny-navbar {
@@ -141,7 +142,7 @@
     width: 70vw;
     height: 100vh;
     background: var(--white); /* Light overlay */
-    z-index: 1010;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;

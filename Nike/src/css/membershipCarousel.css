@@ -38,6 +38,7 @@
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease;
+    z-index: 0!important;
   }
   
   .membership-card:hover {
