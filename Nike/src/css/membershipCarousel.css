@@ -1,0 +1,70 @@
+.membership-carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .membership-heading {
+    text-align: left;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--black);
+  }
+  
+  /* Swiper Slide */
+  .membership-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Membership Card (Image Background) */
+  .membership-card {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 300px; /* Adjusted height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+  }
+  
+  .membership-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Membership Title */
+  .membership-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Button */
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  
+  

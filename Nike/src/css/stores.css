@@ -1,0 +1,41 @@
+/* Stores Section */
+.stores-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    padding: 50px;
+    gap: 40px;
+    background-image: url(../../public/images/store.jpg);
+    background-size:cover;
+    text-align: center;
+  }
+ 
+  .stores-form-container h2 {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    color: #f7f7f7;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .stores-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .stores-image img {
+      max-width: 100%;
+    }
+  
+    .stores-form {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
