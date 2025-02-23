@@ -2,8 +2,8 @@ import Navbar from '../../components/Navbar';
 import Header from './Header'
 import Hero from './Hero';
 import Carousel from '../../components/Carousel';
-import Stores from './Stores';
 import MembershipCarousel from './MembershipCarousel';
+import Footer from '../../components/Footer';
 
 const homeSlides = [
   { url: "/images/shoes-1.png", title: "Air Max 90" },
@@ -44,15 +44,21 @@ const Home = () => {
         <Header />
         <Carousel slides={homeSlides} heading={heading}/>
         <Hero
-          heading="Experience the Future of Sneakers"
+          heading="Air Jordan High' 85 is Back."
           para="Step into the future of sneakers—where innovation meets style. Experience the next evolution in footwear today!"
-          imageUrl="/images/hero-image.jpeg"
+          imageUrl="/images/jordan-1.png"
           altText="Nike Air Max Shoe"
         />
         <Carousel slides={CategorySlides} heading={CategoryHeading}/>
-        <Stores />
+        <Hero
+          heading="Experience the Future of Sneakers."
+          para="Explore of our Iconic Jordans"
+          imageUrl="/images/jordan-2.png"
+          altText="Nike Air Max Shoe"
+          reverse={true}
+        />
         <MembershipCarousel slides={MembershipSlides} heading={MembershipHeading} />
-
+        <Footer />
       </div>
     );
   };

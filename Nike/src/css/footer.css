@@ -1,0 +1,96 @@
+.footer-container {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* First Row - Desktop */
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 2rem;
+    height: 80%;
+  }
+  
+  .footer-column h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-country {
+    margin-left: auto;
+  }
+  
+  /* Second Row */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+  }
+  
+  /* ============ RESPONSIVE FOOTER ============ */
+  @media (max-width: 1024px) {
+    /* Stack Footer Columns */
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      gap: 1rem;
+    }
+  
+    /* Dropdown Styles */
+    .footer-column {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+  
+    .footer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+    }
+  
+    .arrow-icon {
+      transition: transform 0.3s ease;
+    }
+  
+    .arrow-icon.open {
+      transform: rotate(180deg);
+    }
+  
+    /* Smooth Slide-in/Slide-out Effect */
+    .footer-dropdown {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .footer-dropdown.show {
+      max-height: 200px; /* Adjust based on content size */
+      padding-top: 8px;
+    }
+  
+    /* Second Row - Align Text Left */
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  

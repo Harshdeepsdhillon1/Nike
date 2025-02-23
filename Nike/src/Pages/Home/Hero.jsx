@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "../../components/Button";
-const Hero = ({ heading, para, imageUrl, altText }) => {
+import "../../css/hero.css";
+
+const Hero = ({ heading, para, imageUrl, altText, reverse }) => {
   return (
-    <section className="section-container">
+    <section className={`section-container ${reverse ? "reverse" : ""}`}>
       <div className="text-container">
         <h2 className="section-heading">{heading}</h2>
         <p className="section-para">{para}</p>
