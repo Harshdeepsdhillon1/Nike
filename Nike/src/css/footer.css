@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    
   }
   
   /* First Row - Desktop */
@@ -13,15 +14,28 @@
     grid-template-columns: repeat(3, 1fr) auto;
     gap: 2rem;
     height: 80%;
+    border-top: 1px solid #ccc;
+    padding: 100px 0;
   }
   
   .footer-column h4 {
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+  .footer-column ul li{
+    list-style: none;
+    padding: 4px 0;
+    transition: font-weight 0.3s ease;
+  } 
+  .footer-column ul li:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
   .footer-country {
     margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
   }
   
   /* Second Row */
@@ -31,6 +45,15 @@
     align-items: center;
     border-top: 1px solid #ccc;
     padding-top: 1rem;
+  }
+  .footer-bottom .footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+
+  .footer-links p:hover{
+    cursor: pointer;
   }
   
   /* ============ RESPONSIVE FOOTER ============ */

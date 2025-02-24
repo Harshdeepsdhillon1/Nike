@@ -129,7 +129,7 @@
   
  /* Mobile Menu Button */
 .menu-toggle {
-    background: none;
+    background: none!important;
     border: none;
     cursor: pointer;
   }
@@ -159,6 +159,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    background: none!important;
   }
   
   /* Tiny Navbar in Mobile Menu */
@@ -210,8 +211,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     padding: 0 100px;
     background-color: var(--white);
   }
