@@ -84,10 +84,10 @@ const Navbar = () => {
   {!isMobile && isExpanded && (
     <motion.div
       className="expanded-navbar"
-      initial={{opacity:0, y: -30 }} // Start hidden & slightly above
-      animate={{opacity:1, y: 0 }} // Slide down & fade in
-      exit={{opacity: 0, y: -30}} // Slide up & fade out on exit
-      transition={{ duration: 0.2 }}
+      initial={{ y: -30, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -30, opacity: 0 }}
+      transition={{ type: "tween", duration: 0.5, ease: "anticipate" }} // Smooth and controlled
       onMouseEnter={handleMouseEnter} // Keep it open if hovering
       onMouseLeave={handleMouseLeave} // Close when leaving both
     >
