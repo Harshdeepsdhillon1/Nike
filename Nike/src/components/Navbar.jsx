@@ -157,7 +157,20 @@ const Navbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
-
+          {/* Overlay Background */}
+      {(menuOpen && (isMobile || isExpanded)) && (
+      <motion.div
+        className="overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        onClick={() => {
+          setMenuOpen(false);
+          setIsExpanded(false);
+        }}
+      />
+      )}
     </div>
   );
 };

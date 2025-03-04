@@ -99,6 +99,17 @@
     width: 100%;
   }
 
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 999; /* Behind the menu but above other elements */
+    transition: opacity 0.3s ease-in-out;
+}
+
   /* Hide Tiny Navbar on Mobile */
 @media (max-width: 1024px) {
     .tiny-navbar {
