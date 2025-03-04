@@ -45,7 +45,7 @@ const Home = () => {
         <Carousel slides={homeSlides} heading={heading}/>
         <Hero
           heading="Air Jordan High' 85 is Back."
-          para="Step into the future of sneakers—where innovation meets style. Experience the next evolution in footwear today!"
+          para="OG's are Back."
           imageUrl="/images/jordan-1.png"
           altText="Nike Air Max Shoe"
         />
