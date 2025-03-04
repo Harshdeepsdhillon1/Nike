@@ -65,6 +65,7 @@
       grid-template-rows: repeat(3, auto);
       gap: 1rem;
     }
+   
   
     /* Dropdown Styles */
     .footer-column {
@@ -101,6 +102,9 @@
     .footer-dropdown.show {
       max-height: 200px; /* Adjust based on content size */
       padding-top: 8px;
+    }
+    .footer-country{
+
     }
   
     /* Second Row - Align Text Left */
