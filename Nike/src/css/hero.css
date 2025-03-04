@@ -50,6 +50,10 @@
       justify-content: center;
       text-align: center;
     }
+    .shoe-image{
+      height: 70%;
+      width: auto;
+    }
   }
   
   
